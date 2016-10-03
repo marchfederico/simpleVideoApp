@@ -1,0 +1,47 @@
+<html>
+    <head>
+          <title>Simple Video App</title>
+          <script
+          src="https://code.jquery.com/jquery-3.1.0.min.js"
+          integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+          crossorigin="anonymous"></script>
+          <script src="https://download.affectiva.com/js/3.1/affdex.js"> </script>
+          <script src="/js/bundle.js"></script>
+          <script src="/js/spark.js"></script>
+    </head>
+    <body>
+          <style>
+              div#videoContainer{
+                position: relative;
+                height: 360px;
+                width: 640px;
+                background-color: rgba(10, 75, 62, 0.05);
+              }
+              div#overlay {
+                position: absolute;
+                border: 3px;
+                top: 0px;
+                right: 0;
+                z-index: 1;
+              }
+              div#buttons {
+                position: absolute;
+                z-index: 2;
+              }
+          </style>
+          <div class="default-page">
+            <div id="videoContainer">
+              <div id="overlay">
+                <video autoplay="true"   id="outgoing-video"></video>
+              </div>
+              <video autoplay="true"   id="incoming-video"></video>
+            </div>
+            <div id="buttons">
+              <input id="callbutton" type="button" value="Call"/> <input id="uri" type="text" value=""/>
+              <button id="hangup">hangup</button>
+                <button id="answer">answer</button>
+            </div>
+            <div id="output"></div>
+          </div>
+    </body>
+</html>

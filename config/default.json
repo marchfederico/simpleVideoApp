@@ -1,0 +1,12 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "auth": {
+    "idField": "id",
+    "token": {
+      "secret": "tv5SEGAWQRFyWebTbA/jwqxcBFivPd4t8u2zEFNkgpOwkUZoK4mKZ1uaJfYi6PHvAGuJhPjFy6s8eXCIOpmwvA=="
+    },
+    "local": {}
+  }
+}
