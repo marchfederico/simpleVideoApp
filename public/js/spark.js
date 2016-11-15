@@ -3,7 +3,7 @@ var currentCall = null
 var incomingCall=null
 var firstTimestamp = 0
 
-ciscospark = ciscospark.init({credentials:{access_token:"YjkyNGU0MWUtNTQ2ZC00YTA0LWE4MDUtOGYwOWU2YmU5NmYxMjU4NzQxODMtNTEz"}})
+ciscospark = ciscospark.init({credentials:{access_token:"<your token here>"}})
 
 
 ciscospark.phone.register()
